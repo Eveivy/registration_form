@@ -24,17 +24,30 @@
             </div>
             <div class="card">
                 <form id="form_el">
-                    <input type="text" placeholder="First Name" name="first_name" id="first_name">
-                    <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
-                    <br> <br>
-                    <input type="text" placeholder="Last Name" name="last_name" id="last_name"> 
-                    <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
-                    <br><br>
-                    <input type="email" placeholder="Email Address" name="email" id="email">
-                    <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
-                     <br><br>
-                    <input type="password" placeholder="Password" name="password" id="password">
-                    <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
+                    <div class="input_div">
+                        <input type="text" placeholder="First Name" name="first_name" id="first_name">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
+                        <span class="err_msg hide">First Name cannot be empty</span>
+                    </div>
+                    
+                    <div class="input_div">
+                        <input type="text" placeholder="Last Name" name="last_name" id="last_name">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
+                        <span class="err_msg hide">Last Name cannot be empty</span>
+                    </div>
+                    
+                    <div class="input_div">
+                        <input type="email" placeholder="Email Address" name="email" id="email">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
+                        <span class="err_msg hide">Looks like this is not an email</span>
+                    </div>
+                   
+                    <div class="input_div">
+                        <input type="password" placeholder="Password" name="password" id="password">
+                        <img src="./images/icon-error.svg" alt="error_icon" class="err_icon hide">
+                        <span class="err_msg hide">Password cannot be empty</span>
+                    </div>
+                   
                     <div class="btn">
                         <button type="submit" id="btn_el">claim your free trial</button>
                         <span class="text">By clicking the button, you are agreeing to our <a href="#">Terms and
