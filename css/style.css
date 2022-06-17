@@ -108,9 +108,17 @@ input {
     border: 0.1em solid hsl(246, 25%, 77%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.027), 0 6px 10px 0 rgba(0, 0, 0, 0.035);
     border-radius: 5px;
+    position: relative;
     outline: none;
 }
-
+.err_icon{
+    position: absolute;
+    right: 150px;
+    margin-top: 10px;
+}
+.hide{
+    display: none;
+}
 input:focus {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.061), 0 6px 20px 0 rgba(0, 0, 0, 0.111);
     border: none;
@@ -154,16 +162,18 @@ a {
     .container {
         flex-direction: column;
         padding: 25px;
-        align-items: flex-start;
     }
     .btn span{
         font-size: 15px;
     }
+    .err_icon{
+        right: 60px;
+    }
 
     .flex_left {
         width: 100%;
-        padding: 0px;
         margin-bottom: 25px;
+        padding-left: 50px;
     }
 
     .flex_right {
