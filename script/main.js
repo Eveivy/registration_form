@@ -16,7 +16,13 @@ formEl.addEventListener("submit", function (ev) {
 
                 if (input[i].value == '') {
 
-                    input[i].style.border = "1px solid red"
+                    input[i].style.border = "1px solid red";
+
+                    input[i].style.color = "red"
+
+                    input[i].placeholder = ""
+
+                    input[2].placeholder = "email.example/com"
                     
                     error[msg].classList.remove("hide") 
 
@@ -24,10 +30,14 @@ formEl.addEventListener("submit", function (ev) {
     
     
                 } else {
+                    input[i].style.border = "1px solid green";
+
+                    input[i].style.color = "black"
+                    
+                    error[msg].classList.add("hide") 
     
                     errorIcon[icon].classList.add("hide")
     
-                    console.log("Okay")
                 }
             }
 
