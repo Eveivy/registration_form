@@ -18,11 +18,13 @@ formEl.addEventListener("submit", function (ev) {
 
                     input[i].style.border = "1px solid red";
 
-                    input[i].style.color = "red"
+                    input[2].style.color = "red"
 
                     input[i].placeholder = ""
 
-                    input[2].placeholder = "email.example/com"
+                    input[2].value = "email.example/com"
+
+                    input[2].style.border = "1px solid red";
                     
                     error[msg].classList.remove("hide") 
 
